@@ -1,6 +1,7 @@
 import React from 'react';
-import Button from 'react-bootstrap/lib/Button';
+import {Button} from 'react-bootstrap';
 import {Grid, Col, Row} from 'react-bootstrap';
+import Form from './Form.js';
 
 const Home = () => {
 
@@ -21,6 +22,7 @@ const Home = () => {
                     <Col xs={6} md={4}>Column 2</Col>
                 </Row>
             </Grid>
+            <Form/>
         </div>
     )
 };

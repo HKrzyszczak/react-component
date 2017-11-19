@@ -1,14 +1,14 @@
 import React from 'react';
-
-const menuElements = ['home', 'profile', 'dashboard'].map((element, index) => {
-    return <li key={index}>{element}</li>;
-});
+import {Nav, NavItem} from 'react-bootstrap';
 
 const Menu = () => {
     return (
-        <ul>
-            {menuElements}
-        </ul>
+        <Nav bsStyle="pills"
+             activeKey={0}>
+            <NavItem eventKey={0}>Home</NavItem>
+            <NavItem eventKey={1}>Profile</NavItem>
+            <NavItem eventKey={2}>Dashboard</NavItem>
+        </Nav>
     );
 };
 
