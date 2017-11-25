@@ -8,16 +8,16 @@ const Form = () => {
             <FormGroup>
                 <ControlLabel>Label</ControlLabel>
                 <FormControl type="text" placeholder="Enter text" />
-                <HelpBlock>Hel block</HelpBlock>
+                <HelpBlock>Help block</HelpBlock>
             </FormGroup>
             <FormGroup>
                 <Checkbox inline>
-                    1
+                    Aktywność
                 </Checkbox>
             </FormGroup>
             <FormGroup>
                 <FormControl componentClass="select" placeholder="select">
-                    <option value="select">select</option>
+                    <option value="select">opcja</option>
                     <option value="other">...</option>
                 </FormControl>
             </FormGroup>
