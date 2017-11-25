@@ -22,6 +22,34 @@ class Counter extends React.Component {
         }
     };
 
+    componentDidMount() {
+        console.log('jestem w didMount')
+    }
+
+    componentWillMount() {
+        console.log('jestem w willMount');
+    }
+
+    componentWillUnmount() {
+        console.log('jestem w unMount');
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+       if (nextProps.name === 'Warszawa'); {
+           return false;
+        }
+        if (nextState.count === 1000) {
+           return false;
+        }
+        return true;
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.props.name;
+        nextProps.name;
+
+    }
+
     render() {
         return <div>
             <h3>Mój stan: {this.state.count}</h3>

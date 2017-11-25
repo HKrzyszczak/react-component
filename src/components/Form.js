@@ -23,7 +23,6 @@ const Form = () => {
             </FormGroup>
         </form>
     );
-
 };
 
 export default Form;
